@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jayashri Infotech Pvt. Ltd.</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #020469e4;
+      --text-light: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--text-light);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      gap: 10px;
+    }
+
+    .logo span {
+      display: inline;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    @media (max-width: 768px) {
+      .logo span {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: var(--primary);
+        padding: 1rem;
+        border-radius: 8px;
+      }
+
+      nav.open {
+        display: flex;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+<header>
+  <div class="logo">
+    <img src="Images/logo.png" alt="Jayashri Infotech Logo" class="logo-img"> 
+    <span class="site-name">Jayashri Infotech</span>
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="nav-menu">
+    <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#founders">Leadership</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#product">Projects</a></li>
+      <li><a href="#careers">Careers</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-wrapper">
+      <div class="hero-content">
+        <h1>Turning Ideas Into Digital Reality</h1>
+        <p>Empowering startups and businesses with innovative web and mobile solutions since 2024.</p>
+        <div class="hero-btn-wrapper">
+          <a href="#contact" class="cta">Let’s Build Together</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="Images/technology.jpg" alt="Hero Image" />
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- About Section -->
+<section id="about" class="section about-section animate-section">
+
+  <div class="about-container">
+    <div class="about-image">
+      <img src="Images/about.jpg" alt="About Us Technology Image">
+    </div>
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p><strong>Jayashri Infotech Pvt. Ltd.</strong> was founded in 2024 with a mission to empower small businesses and startups with modern digital tools. Our very first project was a full-fledged corporate website for <strong>Mangalmurti Infra Space Creators Pvt. Ltd.</strong>, marking our journey into purposeful tech-driven design.</p>
+      <p>We specialize in creating intuitive, fast, and scalable websites, mobile apps, and IT solutions tailored to early-stage companies and visionary entrepreneurs.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Leadership + Vision Mission Values -->
+  <section id="founders" class="section animate-section">
+
+    <h2>Our Directors</h2>
+    <div class="founder-cards">
+      <div class="founder founder-box">
+        <img src="Images/jayashri.jpeg" alt="Jayashri Nitin Mane">
+        <h3>Jayashri Nitin Mane</h3>
+        <p>Director & Strategic Lead</p>
+      </div>
+      <div class="founder">
+        <img src="Images/namrata.jpeg" alt="Namrata Nitin Mane">
+        <h3>Namrata Nitin Mane</h3>
+        <p>Director & Creative Head</p>
+      </div>
+    </div>
+    <div class="vision-boxes vmv-boxes">
+      <div class="box vmv-box">
+        <h4>Our Vision</h4>
+        <p>To become the most trusted IT partner for startups and small enterprises by delivering human-centered digital products.</p>
+      </div>
+      <div class="box vmv-box">
+        <h4>Our Mission</h4>
+        <p>To offer affordable, innovative, and scalable web and mobile solutions that enable business growth in the digital era.</p>
+      </div>
+      <div class="box vmv-box">
+        <h4>Our Values</h4>
+        <ul>
+          <li>Innovation</li>
+          <li>Client-First</li>
+          <li>Simplicity</li>
+          <li>Transparency</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Continue below Leadership Section -->
+<!-- SERVICES SECTION -->
+<section id="services" class="section light">
+
+  <h2>Our Services</h2>
+  <div class="vision-boxes">
+    <div class="box">
+      <h4>IT Consulting</h4>
+      <p>Strategic IT Planning,Technology Assessments, Project Management, Cloud Migration.</p>
+    </div>
+    <div class="box">
+      <h4>Software Development</h4>
+      <p>Custom Application Development,Software Maintenance and Support,Software Testing & QA.</p>
+    </div>
+    <div class="box">
+      <h4>UI/UX Design</h4>
+      <p>Creative, intuitive, and accessible designs that captivate and convert.</p>
+    </div>
+    <div class="box">
+      <h4>Startup IT Support</h4>
+      <p>Tech guidance, hosting, domains, and MVP support for growing startups.</p>
+    </div>
+    <div class="box">
+      <h4>Managed IT Services</h4>
+      <p>Help Desk Support,Network Management, Data Backup and Recovery.</p>
+    </div>
+        <div class="box">
+      <h4>Other Services</h4>
+      <p>IT Training, Data Analytics, Business Intelligence.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+ 
+<section id="product" class="featured-product animate-section">
+
+  <div class="product-content">
+    <div class="product-text">
+      <h2>Featured Product</h2>
+      <p>We have developed a corporate infrastructure website with responsive layout, branding, and project portfolio</p>
+      <a href="https://mangalmurti25infra.github.io/mangalmurti_infra_space_creators/">Know More About Mangalmurti</a>
+    </div>
+    <div class="product-image">
+      <img src="Images/mangalmurti.png" alt="Featured Product">
+    </div>
+  </div>
+</section>
+
+
+<!-- CAREERS SECTION -->
+<section id="careers" class="section">
+  <div class="careers-wrapper">
+    <div class="careers-image">
+      <img src="Images/join.jpg" alt="Careers Image" />
+    </div>
+    <div class="careers-text">
+      <h2>Join Our Team</h2>
+      <p>Want to be part of an innovative startup?<span style="font-weight: 800;">We’re hiring!</span></p>
+      <div class="box job-box">
+        <ul class="job-list">
+          <li>Full Stact Developer</li>
+          <li>Web App Developer</li>
+          <li>UI/UX Designer</li>
+          <li>Quality Assurance- Tester</li>
+          <li>And many more IT Candidate</li>
+        </ul>
+      </div>
+      <a href="jayashri24infotech@gmail.com" class="cta">Apply Now: jayashri24infotech@gmail.com</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section contact-section">
+  <div class="contact-container">
+    <div class="contact-text">
+      <h3>How can we help you?</h3>
+      <h2>Contact Us</h2>
+      <p>We’re here to help and answer any questions you might have. We look forward to hearing from you!</p>
+      <div class="contact-details">
+        <p><strong>📍 Address:</strong> 804, Sunrise Business Park, Wagle Estate, Thane, Maharashtra 400604</p>
+        <p><strong>📞 Phone:</strong> +91 9765925523</p>
+        <p><strong>✉️ Email:</strong> <a href="mailto:jayashri24infotech@gmail.com">jayashri24infotech@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="contact-image">
+      <img src="Images/hello.jpg" alt="Contact Illustration">
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer style="background: var(--light-bg); color: accent; padding: 1rem; text-align: center;">
+  <p>&copy; 2024 Jayashri Infotech Pvt. Ltd. | All Rights Reserved</p>
+</footer>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.hero-content').style.opacity = '1';
+  });
+</script>
+<script>
+    function toggleMenu() {
+      const navMenu = document.getElementById('nav-menu');
+      navMenu.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
